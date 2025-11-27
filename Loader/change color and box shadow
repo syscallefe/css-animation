@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        .loader {
+            border-top: 10px solid #00722e;
+            border-bottom: 10px solid #6f00ed;
+            border-right: 10px solid #00eeff;
+            border-left: 10px solid #ffa200;
+            border-radius: 35%;
+            width: 400px;
+            height: 300px;
+            animation: spin 0.1s linear infinite;
+            margin: 200px auto;
+            box-shadow: rgb(144, 0, 255) 0 0 90px;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(720deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
